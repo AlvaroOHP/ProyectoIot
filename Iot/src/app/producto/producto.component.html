@@ -1,0 +1,36 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> 
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+
+    <br>
+	<br>
+	<div class="row" id="ads">
+    <!-- Category Card -->
+    <div class="col-md-8" >
+        <div class="card rounded" style="background-color: beige">
+            <div class="card-image">
+                <span class="card-notify-year" *ngIf=this.badState> ALERTA
+                    
+                </span>
+                
+                <img class="img-fluid" src="{{getFruitImage()}}" alt="Alternate Text" width="450"  />
+            </div>
+            <div class="card-image-overlay m-auto" >
+                <span class="card-detail-badge">{{producto.fruta}}</span>
+               
+            </div>
+            <div class="card-body text-center" 
+            [ngStyle]="getState()">
+                <div class="ad-title m-auto">
+                    <h5>{{producto.nombre}}</h5>
+                    <h6>{{producto.ubicacion}}</h6>
+                    <button type="button" [routerLink]="['/producto/'+ producto.id]" class="btn">Check</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>

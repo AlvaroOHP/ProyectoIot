@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<p>home works! </p>
+
+
+<div>
+<i  id="term" class="fa fa-thermometer" style="font-size:48px"></i>
+<h1 id="tempValue" [style.color]="getTemperature()">  {{this.Temperatura}} C</h1>
+<i  id="hum" class="fa fa-tint" style="font-size:48px"></i>
+<h1 id="humValue" [style.color]="'orange'"> {{this.Humedad}}</h1>
+</div>
+
+
+<div>
+<img id="color"src="https://static.thenounproject.com/png/61592-200.png"    width="50" height="50">
+<h1 id="colorValue" [style.color]="'blue'"> {{this.Color}}</h1>
+<img id="gas" src="https://image.flaticon.com/icons/svg/66/66701.svg"   width="50" height="50">
+<h1 id="gasValue" [style.color]="'green'"> {{this.Gas}}</h1>
+</div>
+
+
+<style>
+ #term 
+ {
+display:inline-block;
+ margin-right:15px;
+ margin-left: 42%; 
+ margin-bottom: 4%;
+  } 
+#tempValue {
+    display:inline-block;
+    margin-right:5%;
+     } 
+
+     #hum
+ {
+display:inline-block;
+ margin-right:15px; 
+ margin-left: 60px;
+  } 
+#humValue {
+    display:inline-block;
+   
+     } 
+
+     #color
+ {
+display:inline-block;
+margin-right:15px;
+ margin-left: 42%; 
+  } 
+#colorValue {
+    display:inline-block;
+    align-content: center;
+    margin-right:4.5%;
+     } 
+
+     #gas
+ {
+display:inline-block;
+ margin-right:15px; 
+ margin-left: 60px;
+  } 
+#gasValue {
+    display:inline-block;
+    align-content: center
+     } 
+</style>
